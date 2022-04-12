@@ -1,8 +1,7 @@
 import {Component} from 'react'
 
-
 import Clock from './components/Clock';
-import Content from './components/Content'
+import BankData from './components/BankData'
 import Form from './components/Form';
 
 
@@ -24,7 +23,7 @@ class App extends Component {
     return (
       <div>
         <Clock user={this.state.user} />
-        <Content />
+        <BankData />
         <h3>Customize your profile!</h3>
         <Form changeUser={this.changeUser} />
       </div>
