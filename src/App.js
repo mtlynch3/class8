@@ -4,6 +4,8 @@ import Clock from './components/Clock';
 import BankData from './components/BankData'
 import Form from './components/Form';
 
+import ZipSearch from './components/ZipSearch'
+
 
 
 class App extends Component {
@@ -23,9 +25,10 @@ class App extends Component {
     return (
       <div>
         <Clock user={this.state.user} />
-        <BankData />
         <h3>Customize your profile!</h3>
         <Form changeUser={this.changeUser} />
+        <BankData />
+        <ZipSearch />
       </div>
     );
   }
